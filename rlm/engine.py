@@ -723,7 +723,7 @@ def _ripgrep(
                 item: Dict[str, Any] = {
                     "file": path,
                     "path": path,
-                    "line_no": i,
+                    "line_no": i, "line_number": i,
                     "line": line[:500],
                 }
                 if context and context > 0:
@@ -760,7 +760,7 @@ def _grep_file(
             item: Dict[str, Any] = {
                 "file": path,
                 "path": path,
-                "line_no": i,
+                "line_no": i, "line_number": i,
                 "line": line[:500],
             }
             if context and context > 0:

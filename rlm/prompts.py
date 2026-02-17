@@ -47,7 +47,9 @@ Codebase helpers (work best when repo_index is present):
   - file_peek(path: str, *, start_line=1, n_lines=60) -> str
   - search_files(pattern: str, flags=0, max_results=200) -> list[str]
   - ripgrep(pattern: str, flags=0, max_results=200, context=0) -> list[dict]
+    Returns: [{"file": path, "path": path, "line_no": int, "line_number": int, "line": str, "context"?: list}]
   - grep_file(path: str, pattern: str, flags=0, max_results=200, context=0) -> list[dict]
+    Returns: [{"file": path, "path": path, "line_no": int, "line_number": int, "line": str, "context"?: list}]
 
 Recursion:
   - sub_rlm(subprompt: str) -> str
