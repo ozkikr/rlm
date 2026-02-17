@@ -1,0 +1,22 @@
+[project]
+name = "rlm"
+version = "0.1.0"
+description = "Recursive Language Models (RLM) scaffold for codebase research"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "RLM Scaffold" }]
+license = { text = "MIT" }
+
+dependencies = [
+  "litellm>=1.40.0",
+]
+
+[project.scripts]
+rlm = "rlm.cli:main"
+
+[build-system]
+requires = ["hatchling>=1.24.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["rlm"]
